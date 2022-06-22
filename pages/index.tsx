@@ -1,14 +1,13 @@
-import Link from "next/link";
-import Head from "next/head";
-import { MainLayout } from "../components/layouts/MainLayout";
+import { MainLayout } from "../components/layouts";
+import { Button } from "@nextui-org/react";
+
+const title = "Diario de Vicente";
 
 export default function Home() {
   return (
-    <MainLayout>
-      <h1 className={'title'}>Bienvenido al Diario de Vicente!</h1>
-      <Link href="/login">
-        <a>Iniciar Sesión</a>
-      </Link>
+    <MainLayout title={title} >
+      
+      <Button>Click!</Button>
     </MainLayout>
   );
 }
